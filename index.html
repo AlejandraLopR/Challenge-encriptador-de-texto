@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador o Desecriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="./img/logo2.jpg" alt="Logo del Pyecto" class="header__logo" />
+        <img src="./img/texto.jpg" alt="Nombre del proyecto" class="header__texto" />
+
+    </header>
+
+    <main class="container">
+        <section class="container__encriptado">
+            <section class="texto__ajuste" id="ajusteText">
+                <textarea type="text" id="textOrigin" contenteditable="true" class="container__input"
+                    placeholder="Ingresa el texto aqui"></textarea>
+            </section>
+
+
+            <section class="adv__botones">
+                <div class="desc__advertencia">
+                    <img src="./img/icono.png" alt="Icono Advertencia" class="icono__advertencia" />
+                    <p class="texto__adevertencia">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="contenedor__de__botones">
+                    <button id="encripar" onclick="verificarEncriptar()" class="container__boton">Ecriptar</button>
+                    <button onclick="verificarDesencriptar();" class="container__boton">Desecriptar</button>
+                </div>
+            </section>
+        </section>
+
+        <section class="mostrar_encriptado">
+            <div class="visible__Texto" id="texcopiar">
+                <img src="./img/image.png" alt="Cunado el usario aun no encripta el texto" class="sin__encriptar" />
+                <p class="titulo__muestra">Ningún mensaje fue encontrado</p>
+                <p class="descripcion__muestra">Ingrese el texto que desea encriptar o desencriptar</p>
+            </div>
+            <button id="copiar" class="boton__copiar">Copiar</button>
+
+        </section>
+
+    </main>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
