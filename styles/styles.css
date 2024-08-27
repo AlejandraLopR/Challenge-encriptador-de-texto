@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*porcencetaje realitivo al elemnto body o padre*/
+:root {
+    --color-primario: #F6F5F2;
+    --color-secundario:#F3D0D7;
+    --color-terciario: #F3D0D7;
+    --color-cuarto: #8574e4;
+    --color-quinteavo:#7469B6;
+    --color-sexto:#443c74;
+    --fuente-montserrat: "Montserrat", sans-serif;
+    --fuente-krona: 'Krona One ', sans-serif;
+}
+
+body {
+    background-color: var(--color-primario);
+    height: 100%;
+
+}
+
+.header {
+    padding: 0% 0% 0% 0%;
+    display: flex;
+    
+}
+.header__logo{
+    width: 10%;
+    height: 20%;
+}
+.header__texto{
+    width: 14%;
+    height: 20%;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+
+}
+
+.container__encriptado {
+    padding: 5% 5% 0% 5%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 80vh;
+
+    justify-content: space-between;
+}
+
+.texto__ajuste {
+    display: flex;
+    height: auto;
+}
+
+.container__input {
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding-left: 2%;
+    padding-right: 2%;
+    overflow: hidden;
+    width: 100%;
+    min-height: 4rem; /* Altura mínima */
+    line-height: 1.5em; /* Espaciado entre líneas */
+    white-space: pre-wrap; /* Mantiene espacios y saltos de línea */
+    background-color: var(--color-secundario);
+    color: var(--color-sexto);
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+}
+
+.adv__botones {
+    display: flex;
+    flex-direction: column;
+}
+
+.desc__advertencia {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icono__advertencia {
+    width: 1rem;
+    height: 1rem;
+}
+
+.texto__adevertencia {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    width: 35%;
+    height: 1.5rem;
+}
+
+.contenedor__de__botones {
+    display: flex;
+    gap: 24px;
+}
+
+.container__boton {
+    border-radius: 20px;
+    background-color: var(--color-terciario);
+    font-family: "Montserrat", sans-serif;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: var(--color-sexto);
+    width: 20rem;
+    height: 4rem;
+}
+
+.container__boton:disabled {
+    background: var(--color-cuarto);
+    color: var(--color-quinteavo);
+}
+
+.mostrar_encriptado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-secundario);
+    font-family: var(--fuente-montserrat);
+    padding: 2% 2% 0% 2%;
+    width: max-content;
+    height: 35rem;
+
+}
+
+.visible__Texto {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: var(--color-quinteavo);
+
+}
+
+.sin__encriptar {
+    width: 336px;
+    height: 304px;
+}
+
+.titulo__muestra {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 24px;
+    font-style: initial;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-quinteavo);
+}
+
+.descripcion__muestra {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: var(--color-quinteavo);
+    text-align: center;
+}
+
+
+.boton__copiar {
+    border-radius: 20px;
+    background-color: var(--color-terciario);
+    color: var(--color-sexto);
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    text-align: center;
+    padding: 4% 30%;
+    font-size: 1rem;
+    width: 300px;
+    height: 60px;
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .header {
+        padding: 10%;
+        justify-content: center;
+    }
+    .header__logo{
+        width: 30%;
+        height: 30%;
+    }
+    .header__texto{
+        width: 40%;
+        height: 70%;
+        
+    }
+
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .mostrar_encriptado {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        height: 12.5rem;
+        
+
+    }
+    .sin__encriptar{
+        display: none;
+
+    }
+    .texto__adevertencia {
+        width: max-content;
+        height: max-content;
+    }
+    .visible__Texto{
+        display: flex;
+        width: max-content;
+        height: max-content;
+    }
+
+}
