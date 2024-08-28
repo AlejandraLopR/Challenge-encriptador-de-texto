@@ -20,10 +20,12 @@ y secreta de conocer el verdadero mensaje :speak_no_evil:.
 - **u**: por "prt"
 
 *Por ejemplo*: Mi nombre es "ale",  así que al ingresar mi nombre y presionar encriptar, me arrojará en el recuadro derecho "pzlser". Como se muestra en la imagen a continuación:
+
 <img src="img/Encriptado.JPG"  style="width: 500px;"/>
 
 <p>¡Por cierto! El texto que se generó también se puede copiar, así que, si deseas desencriptar ahora ese texto, solo le das clic al botón de copiar y pegas en el recuadro del texto y ya podrás desencriptar el texto cifrado.</p>
-<img src="img/desencriptar.JPG"  style="width: 500px;"/>
+
+<img src="img/desencriptar.JPG"  style="width: 400px;"/>
 
 ## :mega::Tecnologías utilizadas
 
