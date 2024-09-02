@@ -14,7 +14,7 @@
 
 body {
     background-color: var(--color-primario);
-    height: 100%;
+    height: auto;
 
 }
 
